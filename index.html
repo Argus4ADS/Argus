@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Argus</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Argus: Resilience-Oriented Safety Assurance Framework for
+              End-to-End ADSs</h1>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/Argus4ADS/Argus/" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="hero teaser">
+    <div class="hero-body ">
+      <div class="container is-max-desktop">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-video1">
+            <video poster="" id="header-video1" autoplay muted loop playsinline height="100%" src="static/video/1.mp4">
+            </video>
+            <h3 class="title is-4 has-text-centered"></h3>
+            <h3 class="title is-4 has-text-centered">Vehicle Collision</h3>
+            <h2 class="subtitle has-text-centered">
+              <p>
+                The EGO vehicle encounters a large emergency vehicle running a red light at a high speed under rainy and
+                low-visibility conditions. UniAD fails to react appropriately and proceeds at a speed of 5.05 m/s,
+                resulting in a collision. In contrast, UniAD-Argus correctly monitors the hazard and took over in time,
+                bringing the vehicle to a full stop (speed: 0.00 m/s) and thereby avoiding the collision.
+              </p>
+            </h2>
+          </div>
+          <div class="item item-video2">
+            <video poster="" id="header-video1" autoplay muted loop playsinline height="100%" src="static/video/2.mp4">
+            </video>
+            <h3 class="title is-4 has-text-centered"></h3>
+            <h3 class="title is-4 has-text-centered">Pedestrain Collision</h3>
+            <h2 class="subtitle has-text-centered">
+              <p>
+                The EGO vehicle encounters a pedestrian emerging from behind a parked vehicle and entering the lane at
+                night. UniAD fails to generate a safe trajectory and adjust its speed in time, leading to a collision
+                with the pedestrian at a speed of 5.06 m/s. In contrast, UniAD-Argus successfully monitors the hazard,
+                takes over control, and stops the vehicle before reaching the pedestrian, thereby avoiding the
+                collision.
+              </p>
+            </h2>
+          </div>
+          <div class="item item-video3">
+            <video poster="" id="header-video1" autoplay muted loop playsinline height="100%" src="static/video/3.mp4">
+            </video>
+            <h3 class="title is-4 has-text-centered"></h3>
+            <h3 class="title is-4 has-text-centered">Stop Signal Violation</h3>
+            <h2 class="subtitle has-text-centered">
+              <p>
+                The EGO vehicle approaches an intersection controlled by a clearly visible stop sign. UniAD fails to
+                perform the mandatory stop and continues through the intersection at a speed of 5.03 m/s, resulting in a
+                stop sign violation, while UniAD-Argus monitors the potential hazard and takes over to enforce adherence
+                to traffic rules.
+              </p>
+            </h2>
+          </div>
+          <div class="item item-video4">
+            <video poster="" id="header-video1" autoplay muted loop playsinline height="100%" src="static/video/4.mp4">
+            </video>
+            <h3 class="title is-4 has-text-centered"></h3>
+            <h3 class="title is-4 has-text-centered">Vehicle Stalling</h3>
+            <h2 class="subtitle has-text-centered">
+              <p>
+                The EGO vehicle encounters a parked vehicle partially obstructing the lane, and must change lanes into samedirection traffic. UniAD fails to plan a feasible trajectory and stalls indefinitely (a speed of 0.00 m/s), while UniAD-Argus takes over, reroutes around the obstruction, and safely guides the lane change. Control is then smoothly returned to the ADS, allowing driving to resume without interruption.
+              </p>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              End-to-end autonomous driving systems (ADSs), with their strong capabilities in environmental perception
+              and generalizable driving decisions, are attracting growing attention from both academia and industry.
+              However, once deployed on public roads, ADSs are inevitably exposed to diverse driving hazards that may
+              compromise safety and degrade system performance. This raises a strong demand for resilience of ADSs,
+              particularly the capability to continuously monitor driving hazards and adaptively respond to potential
+              safety violations, which is crucial for maintaining robust driving behaviors in complex driving scenarios.
+            </p>
+            <p>
+              To bridge this gap, we propose a runtime resilience-oriented framework, <b>Argus</b>, to mitigate the
+              driving hazards, thus preventing potential safety violations and improving the driving performance of an
+              ADS. Argus continuously monitors the trajectories generated by the ADS for potential hazards and, whenever
+              the EGO vehicle is deemed unsafe, seamlessly takes control through a hazard mitigator. We integrate Argus
+              with three state-of-the-art end-to-end ADSs, i.e., TCP, UniAD and VAD. Our evaluation has demonstrated
+              that Argus effectively and efficiently enhances the resilience of ADSs, improving the driving score of the
+              ADS by up to <b>150.30%</b> on average, and preventing up to <b>64.38%</b> of the violations, with little
+              additional time overhead.
+            </p>
+            <p>
+              The paper has been submitted to ASE 2025.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+
+  <section class="section hero is-small">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <div class="content">
+            <h2 class="title is-3">Prototype and Documents</h2>
+            <div class="level-set has-text-justified">
+              <img src="static/images/Overview.png" alt="MY ALT TEXT" />
+              <p>
+                Argus comprises three components, i.e., the Takeover Gate, the Hazard Monitor and the Hazard Mitigator.
+                Every trajectory generated by the ADS passes through the Takeover Gate, a component responsible for
+                dynamic control switching between the ADS and the Hazard Mitigator that is built upon the intelligent
+                driver model. The Takeover Gate leverages three takeover buffers and one recovery buffer, all maintained
+                by the Hazard Monitor, to determine whether a given trajectory is safe for execution by a takeover and
+                recovery mechanism. If the EGO vehicle (i.e., the vehicle controlled by the ADS) is deemed unsafe,
+                control is taken over by the Hazard Mitigator for hazard mitigation, and is only returned to the ADS
+                once safety is re-established.
+              </p>
+              <p>
+                We have implemented a prototype of Argus with 6,709 lines of Python code. The prototype of Argus and
+                documents are available on <a href="https://github.com/Argus4ADS/Argus" target="_blank">GitHub</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hero is-small is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <div class="content">
+            <h2 class="title is-3">Target ADSs and BEVFormer Checkpoint</h2>
+            <div class="level-set has-text-justified">
+              <p>
+                We choose three state-of-the-art models, which are the most representative end-to-end ADSs, as our targets. All the three ADSs are initially trained with the Bench2Drive training set. Moreover, we adopt a widely used approach, BEVFormer, which aggregates multiview camera inputs to construct the surrounding environment of the ADS.
+              </p>
+              <p>
+                The checkpoints of the ADS models and BEV perception models are available at
+                <a class="has-text-link"
+                  href="https://drive.google.com/drive/folders/1Hn-81QSRjcxE1uKiL9QBDRVgGEcp9uKI?usp=drive_link"
+                  target="_blank">Google Drive</a>.
+              </p>
+              <table class="table is-striped is-fullwidth">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>BEVFormer</th>
+                    <th>Privileged</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>mAP ↑</td>
+                    <td>0.6167</td>
+                    <td>1.0000</td>
+                  </tr>
+                  <tr>
+                    <td>mATE ↓</td>
+                    <td>0.3717</td>
+                    <td>0.0000</td>
+                  </tr>
+                  <tr>
+                    <td>mASE ↓</td>
+                    <td>0.0790</td>
+                    <td>0.0000</td>
+                  </tr>
+                  <tr>
+                    <td>mAOE ↓</td>
+                    <td>0.0437</td>
+                    <td>0.0000</td>
+                  </tr>
+                  <tr>
+                    <td>mAVE ↓</td>
+                    <td>0.8081</td>
+                    <td>0.0000</td>
+                  </tr>
+                  <tr>
+                    <td>NDS ↑</td>
+                    <td>0.6423</td>
+                    <td>1.0000</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>
+                <strong>Note:</strong> The used perception model BEVFormer is less effective than privileged perception,
+                but Argus using real-perception can already achieve comparable results with Argus* using privileged
+                perception. Please refer to the paper for details.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section hero is-small">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <div class="level-set has-text-justified">
+            <div class="content">
+              <h2 class="title is-3">Result</h2>
+              <div id="results-carousel" class="carousel results-carousel">
+                <div class="item has-text-centered">
+                  <img src="static/images/result/result1.jpg" alt="MY ALT TEXT" />
+                </div>
+                <div class="item has-text-centered">
+                  <img src="static/images/result/result2.jpg" alt="MY ALT TEXT" />
+                </div>
+                <div class="item has-text-centered">
+                  <img src="static/images/result/result3.jpg" alt="MY ALT TEXT" />
+                </div>
+              </div>
+              <h3 class="title is-4">Bench2Drive (Bench2Drive220)</h3>
+              <p>
+                Bench2Drive is a CARLA benchmark proposed by the paper <a href="https://arxiv.org/abs/2406.03877"
+                  target="_blank">Bench2Drive: Towards Multi-Ability Benchmarking of Closed-Loop End-To-End Autonomous
+                  Driving</a>. It consists of 220 very short (~150m) routes split across all towns with 1 safety
+                critical scenario in each route. To give a rough estimate, it takes around ~4 days to evaluate one ADS
+                on Bench2Drive with 4xRTX 3090. For more details on how to aggregate the results, see the <a
+                  href="https://github.com/Thinklab-SJTU/Bench2Drive" target="_blank">Bench2Drive</a>.
+              </p>
+              <h3 class="title is-4">CARLA leaderboard 2.0 validation set (CVL20)</h3>
+              <p>
+                <a href="https://leaderboard.carla.org/" target="_blank">The CARLA leaderboard 2.0 validation routes</a>
+                is a set of 20 long (~12 km) routes in Town 13. While driving along the routes, the agent has to solve
+                around 90 safety critical scenarios per route consisting of 21 different types (38 counting variations).
+                Due to the length of the routes as well as the large number of scenarios per route, the scores on this
+                benchmark are much lower than on Bench2Drive and other benchmarks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--BibTex citation -->
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+  </section> -->
+  <!--End BibTex citation -->
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the source code of this website, we just ask that you link back to this page in the
+              footer. <br> This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
