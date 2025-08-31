@@ -132,7 +132,10 @@
             <h3 class="title is-4 has-text-centered">Vehicle Stalling</h3>
             <h2 class="subtitle has-text-centered">
               <p>
-                The EGO vehicle encounters a parked vehicle partially obstructing the lane, and must change lanes into samedirection traffic. UniAD fails to plan a feasible trajectory and stalls indefinitely (a speed of 0.00 m/s), while UniAD-Argus takes over, reroutes around the obstruction, and safely guides the lane change. Control is then smoothly returned to the ADS, allowing driving to resume without interruption.
+                The EGO vehicle encounters a parked vehicle partially obstructing the lane, and must change lanes into
+                samedirection traffic. UniAD fails to plan a feasible trajectory and stalls indefinitely (a speed of
+                0.00 m/s), while UniAD-Argus takes over, reroutes around the obstruction, and safely guides the lane
+                change. Control is then smoothly returned to the ADS, allowing driving to resume without interruption.
               </p>
             </h2>
           </div>
@@ -214,7 +217,10 @@
             <h2 class="title is-3">Target ADSs and BEVFormer Checkpoint</h2>
             <div class="level-set has-text-justified">
               <p>
-                We choose three state-of-the-art models, which are the most representative end-to-end ADSs, as our targets. All the three ADSs are initially trained with the Bench2Drive training set. Moreover, we adopt a widely used approach, BEVFormer, which aggregates multiview camera inputs to construct the surrounding environment of the ADS.
+                We choose three state-of-the-art models, which are the most representative end-to-end ADSs, as our
+                targets. All the three ADSs are initially trained with the Bench2Drive training set. Moreover, we adopt
+                a widely used approach, BEVFormer, which aggregates multiview camera inputs to construct the surrounding
+                environment of the ADS.
               </p>
               <p>
                 The checkpoints of the ADS models and BEV perception models are available at
@@ -282,7 +288,7 @@
         <div class="column is-full">
           <div class="level-set has-text-justified">
             <div class="content">
-              <h2 class="title is-3">Result</h2>
+              <h2 class="title is-3">Effectiveness Evaluation (RQ1)</h2>
               <div id="results-carousel" class="carousel results-carousel">
                 <div class="item has-text-centered">
                   <img src="static/images/result/result1.jpg" alt="MY ALT TEXT" />
@@ -310,6 +316,121 @@
                 around 90 safety critical scenarios per route consisting of 21 different types (38 counting variations).
                 Due to the length of the routes as well as the large number of scenarios per route, the scores on this
                 benchmark are much lower than on Bench2Drive and other benchmarks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hero is-small is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <div class="level-set has-text-justified">
+            <div class="content">
+              <h2 class="title is-3">Efficiency Evaluation (RQ2)</h2>
+              <div class="item has-text-centered">
+                <img src="static/images/result/result4.jpg" alt="MY ALT TEXT" />
+              </div>
+              <p>
+                Argus can efficiently enhance the resilience of end-to-end ADSs and each component in Argus incurs
+                little additional time overhead.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hero is-small">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <div class="level-set has-text-justified">
+            <div class="content">
+              <h2 class="title is-3">Accuracy Evaluation (RQ3)</h2>
+              <div class="item has-text-centered">
+                <img src="static/images/result/result5.jpg" alt="MY ALT TEXT" />
+              </div>
+              <p>
+                Argus can produce appropriate takeover decisions in the face of driving hazards.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hero is-small is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <div class="level-set has-text-justified">
+            <div class="content">
+              <h2 class="title is-3">Ablation Study (RQ4)</h2>
+              <div class="item has-text-centered">
+                <img src="static/images/result/result6.jpg" alt="MY ALT TEXT" />
+              </div>
+              <p>
+                Both the two steps contribute the hazard mitigation, and their combination effectively enhances the
+                resilience of end-to-end ADSs, improving the driving performance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hero is-small">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <div class="level-set has-text-justified">
+            <div class="content">
+              <h2 class="title is-3">Parameter Sensitivity Analysis (RQ5)</h2>
+              <div id="results-carousel" class="carousel results-carousel">
+                <div class="item has-text-centered">
+                  <img src="static/images/result/result7-1.jpg" alt="MY ALT TEXT" />
+                  <h3 class="title is-4 has-text-centered">UniAD</h3>
+                </div>
+                <div class="item has-text-centered">
+                  <img src="static/images/result/result7-3.jpg" alt="MY ALT TEXT" />
+                  <h3 class="title is-4 has-text-centered">VAD</h3>
+                </div>
+                <div class="item has-text-centered">
+                  <img src="static/images/result/result7-2.jpg" alt="MY ALT TEXT" />
+                  <h3 class="title is-4 has-text-centered">TCP</h3>
+                </div>
+              </div>
+              <p>
+                Argus maintains improved resilience across different parameter settings, though overly aggressive or
+                conservative settings cause false positives or missed hazards.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hero is-small is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <div class="level-set has-text-justified">
+            <div class="content">
+              <h2 class="title is-3">Generalization Evaluation (RQ6)</h2>
+              <div class="item has-text-centered">
+                <img src="static/images/result/result8.jpg" alt="MY ALT TEXT" />
+              </div>
+              <p>
+                Argus shows a strong generalization capability to modular ADSs, consistently outperforming both the
+                original Apollo and Apollo-REDriver across different benchmarks.
               </p>
             </div>
           </div>
