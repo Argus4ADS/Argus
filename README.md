@@ -6,7 +6,7 @@ In this work, we propose a runtime resilience-oriented framework, **Argus**, to 
 
 Note: This is the first version of Argus, and we plan to release updates in the future.
 
-This work has been submitted to ASE 2025.
+This work has been accepted by to ASE 2025.
 
 ## Benchmark
 
